@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import AppContext from "../context/appContext";
 import Akhuwat13 from '../../Images/i20.jpg'
+import { getCdnUrl } from '../../utils/cdnImage'
 const AkhuwatLoanStatus = () => {
   const { fetchUserByCnic } = useContext(AppContext);
   const [cnicNumber, setCnicNumber] = useState("");
@@ -41,9 +42,9 @@ const AkhuwatLoanStatus = () => {
         <div className="col-md-6 mb-4">
           <div className="shadow rounded p-4 bg-white">
             <img
-              src={Akhuwat13}
+              src={getCdnUrl(Akhuwat13)}
               style={{height:"150px",objectFit:'cover'}}
-              alt="Akhuwat Foundation Loan Banner"
+              alt="Travel Embassy Job Apply Banner"
               className="card-img-top rounded mb-3"
             />
             <form onSubmit={handleSubmit}>
@@ -73,9 +74,9 @@ const AkhuwatLoanStatus = () => {
 
         {/* Right column: Info */}
         <div className="col-md-6 p-5">
-          <h2 className="fw-bold mb-3">How to Keep Track of Your Loan Status?</h2>
+          <h2 className="fw-bold mb-3">How to Track Your Job Apply Status?</h2>
           <p>
-            You can track your loan anytime. Simply enter your CNIC number to see the current status of your Akhuwat Foundation loan application. For assistance or any questions, you can also reach out through the Akhuwat Foundation Loan WhatsApp Helpline.
+            Track your application anytime. Enter your CNIC to see the status of your Travel Embassy Job Apply. For help, reach out via WhatsApp.
           </p>
         </div>
       </div>
@@ -92,7 +93,7 @@ const AkhuwatLoanStatus = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="userInfoModalLabel">
-                Loan Status
+                Job Apply Status
               </h5>
               <button
                 type="button"
@@ -119,10 +120,10 @@ const AkhuwatLoanStatus = () => {
                     <strong>Phone:</strong> {user.phoneNumber}
                   </p>
                   <p>
-                    <strong>Applied Loan Amount:</strong> PKR{user.loanAmount}
+                    <strong>Application Amount:</strong> PKR{user.loanAmount}
                   </p>
                   <p>
-                    <strong>Loan Status:</strong>{" "}
+                    <strong>Application Status:</strong>{" "}
                     <span
                       className={`fw-bold ${
                         user.loanStatus === "approved"
@@ -138,7 +139,7 @@ const AkhuwatLoanStatus = () => {
                 </>
               ) : (
                 <p className="text-center text-danger fw-bold">
-                  No loan request found for this CNIC.
+                  No application found for this CNIC.
                 </p>
               )}
             </div>

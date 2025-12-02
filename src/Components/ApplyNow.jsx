@@ -1,5 +1,4 @@
  import React from 'react'
- import Blogimg from '../Images/apply now.jpg'
  import ApplyLoanForm from './homeComponents/ApplyLoanForm'
  
  const ApplyNow = () => {

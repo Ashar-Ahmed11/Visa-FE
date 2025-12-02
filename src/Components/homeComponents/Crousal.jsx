@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import AppContext from '../context/appContext';
 import coverImage from '../../Images/i1.jpg'
+import { getCdnUrl } from '../../utils/cdnImage'
 import { Link } from 'react-scroll';
 const Crousal = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -16,17 +17,17 @@ const Crousal = () => {
 
   // Wrapper for file change to handle loading
   const uploadImage = (fieldName) => async (e) => {
-  setUploading(true);
-  try {
-    await handleFileUpdate(e, fieldName);
-  } catch (err) {
-    console.error("Upload error:", err);
-  } finally {
-    setUploading(false);
-  }
-};
+    setUploading(true);
+    try {
+      await handleFileUpdate(e, fieldName);
+    } catch (err) {
+      console.error("Upload error:", err);
+    } finally {
+      setUploading(false);
+    }
+  };
 
-const color = "#FF7729"
+  const color = "#FF7729"
 
   return (
     <div
@@ -34,7 +35,7 @@ const color = "#FF7729"
       style={{
         height: '800px',
         backgroundImage:
-          `url(${coverImage})`,
+          `url(${getCdnUrl(coverImage)})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -49,39 +50,39 @@ const color = "#FF7729"
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: 'rgb(255, 119, 41 / 25%)',
+          backgroundColor: 'rgba(255, 119, 41, 0.6)',
           zIndex: 1,
         }}
       />
 
       {/* Content row */}
       <div className="row w-100 position-relative" style={{ zIndex: 2 }}>
-        <div className={`col-md-6 ${isMobile ? 'col-12 mb-4' : ''} d-flex align-items-center`}>
+        <div className={`col-md-6 ${isMobile ? 'col-12 mb-4' : ''} d-flex align-items-center flex-column justify-content-center`}>
           <h1
             data-aos="fade-right"
             data-aos-duration="1500"
-            className={`${isMobile ? 'fw-bold fs-3' : 'display-5 fw-bold px-5'}`}
+            className={`${isMobile ? 'fw-bold display-4' : 'display-5 fw-bold px-5'}`}
             style={{ color: 'white' }}
           >
-            The Akhuwat Foundation Loan Program- the most reliable and helpful loan provider in Pakistan.
+            Travel Embassy Job Apply — Fast, reliable, helpful.
           </h1>
+
+          <p className="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus explicabo magnam, ipsum enim quos corporis aspernatur, consequatur tenetur, ad omnis quis! Est vero doloremque, fuga inventore non sequi? Accusamus.</p>
+          {/* <Link class="btn btn-primary border-light border-2" to="loan-form" role="button" style={{ backgroundColor: '#FF7729', color: 'white' }} type="button" >Job Apply</Link> */}
+
         </div>
 
         <div className="col-md-6 d-flex justify-content-center  align-items-center my-3">
           <div
-          className='p-4 flex-wrap'
+            className='p-4 flex-wrap'
             data-aos="fade-left"
             data-aos-duration="1500"
             style={{
-              backgroundColor: 'white',
-              borderRadius: '12px',
-              boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+           
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              width: '1200px',
-              maxWidth: '700px',
-              cursor: 'pointer'
+          
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -96,17 +97,9 @@ const color = "#FF7729"
                   justifyContent: 'center'
                 }}
               > */}
-                {/* <span style={{ fontSize: '20px' }}>📞</span> */}
+              {/* <span style={{ fontSize: '20px' }}>📞</span> */}
               {/* </div> */}
-              <span
-                style={{
-                  fontSize: '22px',
-                  fontWeight: 'bold',
-                  color: '#FF7729'
-                }}
-              >
-                Akhuwat Foundation
-              </span>
+            
             </div>
             {/* <span
               style={{
@@ -117,7 +110,9 @@ const color = "#FF7729"
             >
               
             </span> */}
-<Link class="btn btn-primary" to="loan-form"  role="button" style={{backgroundColor:'#FF7729', color:'white'}} type="button" >Apply Loan</Link>
+            {/* <p className="text-light fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus explicabo magnam, ipsum enim quos corporis aspernatur, consequatur tenetur, ad omnis quis! Est vero doloremque, fuga inventore non sequi? Accusamus.</p> */}
+            <Link class="btn btn-primary border-light border-2 px-4 py-2" to="loan-form" role="button" style={{ backgroundColor: '#FF7729', color: 'white' }} type="button" >Start Your Application</Link>
+
           </div>
         </div>
       </div>

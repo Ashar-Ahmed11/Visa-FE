@@ -21,15 +21,15 @@ const PrivacyPolicy = () => {
               <h1 className="fw-bold mb-4">Privacy Policy</h1>
 
               <p className="mb-4">
-              At Akhuwat Foundation Loan, we deeply value the trust you place in us by sharing your personal information. Protecting your privacy is our highest priority, and we are committed to maintaining the strictest standards of security and confidentiality. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our services or visit our website. By doing so, you agree to the terms outlined in this policy.
+              At Travel Embassy Job Apply, we deeply value the trust you place in us by sharing your personal information. Protecting your privacy is our highest priority, and we are committed to maintaining the strictest standards of security and confidentiality. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our services or visit our website.
               </p>
               {/* <p className="mb-4">
-                You agree to the terms and conditions in this Privacy Policy when you use Akhuwat Foundation Loan's services or visit its website.
+              You agree to the terms and conditions in this Privacy Policy when you use Travel Embassy Job Apply services or visit its website.
               </p> */}
               <div className="my-5 text-center">
                 <img
                   src={asaanQarz18}
-                  alt="Soft Loan Pakistan"
+                  alt="Travel Embassy Job Apply"
                   className="img-fluid rounded shadow-sm"
                   style={{ width: "80%", height: "auto" }}
                 />
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
               </p>
               <ul className="fw-light mx-5">
                 <li>
-                 A person's name, address, phone number, email address, CNIC, information about their income, and bank account information are needed to apply for a loan.
+                 A person's name, address, phone number, email address, CNIC, information about their income, and bank account information are needed to submit an application.
                 </li>
                 <li>
                 More information can be given through forms, calls, emails, or talks in person.
@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
               </ul>
 
               <h2 className="fw-bold mt-5 mb-4">
-                2. Describe how we use the information you give us to handle loan requests and decide who is eligible.
+                2. Describe how we use the information you give us to handle applications and decide who is eligible.
               </h2>
 
               <ul className="fw-light mx-5">
@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
               </ul>
 
               <h2 className="fw-bold mt-5 mb-4">
-              3. Giving your info to dependable partners who will help you with loan handling and other services.
+              3. Giving your info to dependable partners who will help you with application handling and other services.
               </h2>
 
               <ul className="fw-light mx-5">
@@ -134,8 +134,7 @@ const PrivacyPolicy = () => {
               </ul>
 
               <p className="mb-4">
-                To exercise these rights, contact us via the details provided
-                below.
+              To exercise these rights, contact us via the details provided below.
               </p>
 
               <h2 className="fw-bold mt-5 mb-4">7. Keeping the Data</h2>
@@ -172,9 +171,7 @@ const PrivacyPolicy = () => {
               </p>
 
               <ul className="fw-light mx-5">
-                <li>
-                  Send an email to support@Akhuwat Foundationloanschemepk.com.
-                </li>
+                <li>Send an email to support@travelembassy.com.</li>
                 <li>
                 Call +92 0346 0760718
                 </li>

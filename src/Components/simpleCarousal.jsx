@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import AppContext from '../context/appContext';
 import coverImage from '../../Images/Carousalimg.jpg'
+import { getCdnUrl } from '../utils/cdnImage'
 import { Link } from 'react-scroll';
 const Crousal = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -34,7 +35,7 @@ const color = "#FF7729"
       style={{
         height: '800px',
         backgroundImage:
-          `url(${coverImage})`,
+          `url(${getCdnUrl(coverImage)})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -63,7 +64,7 @@ const color = "#FF7729"
             className={`${isMobile ? 'fw-bold fs-3' : 'display-5 fw-bold px-5'}`}
             style={{ color: 'white' }}
           >
-            The Akhuwat Foundation Loan Program- the most reliable and helpful loan provider in Pakistan.
+            Travel Embassy Job Apply — Fast, reliable, helpful.
           </h1>
         </div>
 
@@ -105,7 +106,7 @@ const color = "#FF7729"
                   color: '#FF7729'
                 }}
               >
-                Akhuwat Foundation
+                Travel Embassy Job Apply
               </span>
             </div>
             {/* <span
@@ -117,7 +118,7 @@ const color = "#FF7729"
             >
               
             </span> */}
-<Link class="btn btn-primary" to="loan-form"  role="button" style={{backgroundColor:'#FF7729', color:'white'}} type="button" >Apply Loan</Link>
+<Link class="btn btn-primary" to="loan-form"  role="button" style={{backgroundColor:'#FF7729', color:'white'}} type="button" >Job Apply</Link>
           </div>
         </div>
       </div>

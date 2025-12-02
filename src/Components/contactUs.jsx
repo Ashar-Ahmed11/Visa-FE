@@ -20,9 +20,9 @@ const ContactUs = () => {
               <h1 className="fw-bold mb-4">Reach Out and Let Us Guide You</h1>
 
               <p className="mb-4">
-                At Akhuwat Foundation Loan, we believe that every financial
+                At Travel Embassy Job Apply, we believe that every application
                 journey deserves care, attention, and clarity. Whether you’re
-                exploring your first loan, managing an ongoing application, or
+                exploring your first application, managing your ongoing status, or
                 just learning about our services, our team is here to guide you
                 every step of the way. Your questions matter, and your
                 satisfaction is our mission.
@@ -42,7 +42,7 @@ const ContactUs = () => {
                   <p>
                     Have a question or need assistance? Send an email to our
                     customer support team, and we’ll get back to you within 24
-                    hours. From application guidance to clarifying loan options,
+                    hours. From application guidance to clarifying options,
                     we’re ready to provide clear, helpful answers.
                   </p>
                 </div>
@@ -53,7 +53,7 @@ const ContactUs = () => {
                     Sometimes, it’s easier to speak to someone directly. Call
                     our customer service line from 9 AM to 6 PM, Monday to
                     Friday, Pakistan Standard Time. Our experts are happy to
-                    answer your questions about loan eligibility, progress, or
+                    answer your questions about eligibility, progress, or
                     any concerns you may have.
                   </p>
                 </div>
@@ -62,7 +62,7 @@ const ContactUs = () => {
                   <h3 className="fw-bold">3. Visit Us and Experience Personalised Support</h3>
                   <p>
                     If you prefer face-to-face guidance, our office near
-                    Islamabad welcomes you. Meet one of our loan specialists in
+                    Islamabad welcomes you. Meet one of our specialists in
                     person, get personalised advice, and discover solutions
                     designed for your unique needs.
                   </p>
@@ -70,7 +70,7 @@ const ContactUs = () => {
               </div>
 
               <div className="office-address mb-4">
-                <h2 className="fw-bold">Office Address: Dasti Loan</h2>
+                <h2 className="fw-bold">Office Address: Travel Embassy</h2>
                 <p>F-6, Islamabad, Islamabad Capital Territory, Pakistan</p>
               </div>
 
@@ -86,8 +86,8 @@ const ContactUs = () => {
                 <h3 className="fw-bold">Your Questions, Our Commitment</h3>
                 <p>
                   Every message, call, or visit is an opportunity for us to help
-                  you move closer to your goals. At Akhuwat Foundation Loan, we
-                  don’t just provide loans; we provide guidance, clarity, and
+                  you move closer to your goals. At Travel Embassy Job Apply, we
+                  don’t just process applications; we provide guidance, clarity, and
                   support to make your dreams achievable.
                 </p>
               </div>

@@ -23,12 +23,12 @@ const Home = () => {
     
     <div>
       <Crousal />
-      <Cards />
+      <JobCategories/>
       <ApplyLoanForm/>
       <StatsCards />
       <AkhuwatImages2 />
       {/* <WithDraw/> */}
-      <JobCategories/>
+      <Cards />
 
    <WhyChooseAkhuwat />
       <AkhuwatImages3 />

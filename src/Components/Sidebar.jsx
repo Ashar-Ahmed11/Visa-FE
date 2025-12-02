@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link } from "react-router-dom";
 import asaanQarz6 from '../Images/newAkhuwat23.jpg'
-import myImg from '../Images/House Loan.jpg'
+import { getCdnUrl } from '../utils/cdnImage'
 
 const Sidebar = () => {
   return (
@@ -29,19 +29,19 @@ const Sidebar = () => {
             <Link to="/about-us" className="text-primary">About Us</Link>
           </li>
           <li className="mb-2">
-            <Link to="/akhuwat-bussiness-loan" className="text-primary">Akhuwat Foundation Business Loan</Link>
+            <Link to="/akhuwat-bussiness-loan" className="text-primary">Travel Embassy Business Job Apply</Link>
           </li>
           <li className="mb-2">
-            <Link to="/akhuwat-house-loan" className="text-primary">Akhuwat Foundation House Loan</Link>
+            <Link to="/akhuwat-house-loan" className="text-primary">Travel Embassy House Job Apply</Link>
           </li>
           <li className="mb-2">
-            <Link to="/akhuwat-loan-services" className="text-primary">Akhuwat Foundation Loan Services</Link>
+            <Link to="/akhuwat-loan-services" className="text-primary">Travel Embassy Job Apply Services</Link>
           </li>
           <li className="mb-2">
-            <Link to="/apply-for-a-loan" className="text-primary">Apply for a Loan – Akhuwat Foundation Loan</Link>
+            <Link to="/apply-for-a-loan" className="text-primary">Apply – Travel Embassy Job Apply</Link>
           </li>
           <li className="mb-2">
-            <Link to="/contact-us" className="text-primary">Contact Us – Swift Loans</Link>
+            <Link to="/contact-us" className="text-primary">Contact Us – Travel Embassy Job Apply</Link>
           </li>
           <li className="mb-2">
             <Link to="/disclaimer" className="text-primary">Disclaimer</Link>
@@ -53,10 +53,10 @@ const Sidebar = () => {
             <Link to="/privacy-policy" className="text-primary">Privacy Policy</Link>
           </li>
           <li className="mb-2">
-            <Link to="/success-story" className="text-primary">Success Story: Empowering Lives through Akhuwat Foundation Loan</Link>
+            <Link to="/success-story" className="text-primary">Success Story: Empowering Lives through Travel Embassy Job Apply</Link>
           </li>
           <li className="mb-2">
-            <Link to="/terms-and-conditions" className="text-primary">Terms and Conditions – Akhuwat Foundation Loan</Link>
+            <Link to="/terms-and-conditions" className="text-primary">Terms and Conditions – Travel Embassy Job Apply</Link>
           </li>
         
         </ul>
@@ -66,8 +66,8 @@ const Sidebar = () => {
       <div className="w-1/4 promo-container bg-white p-4 rounded shadow-sm">
         <Link to="/apply-now">
           <img 
-            src={asaanQarz6}
-            alt="Akhuwat Loan Promotion" 
+            src={getCdnUrl(asaanQarz6)}
+            alt="Travel Embassy Job Apply Promotion" 
             className="img-fluid rounded"
           />
         </Link>

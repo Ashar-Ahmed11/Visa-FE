@@ -105,12 +105,12 @@ const Dashboard = () => {
               placeholder="Site Jazzcash Number"
               className="form-control my-2"
             />
-            <h4>Loan Fee</h4>
+            <h4>Application Fee</h4>
             <input
               value={siteData.loanfee}
               onChange={(e) => setSiteData({ ...siteData, loanfee: e.target.value })}
               type="text"
-              placeholder="Loan Fee"
+              placeholder="Application Fee"
               className="form-control my-2"
             />
 

@@ -4,7 +4,7 @@ const AkhuwatPlans = () => {
     const color = "#FF7729"
     return (
         <div className='container' >
-            <h1 className='text-center py-5'><b>Akhuwat Foundation Loan Plans</b></h1>
+            <h1 className='text-center py-5'><b>Travel Embassy Job Apply Plans</b></h1>
             
                 <div className="row">
                     {[
@@ -43,17 +43,17 @@ const AkhuwatPlans = () => {
             <ul className="list-group pb-4">
                 <li className="py-3 list-group-item">
                     <p className="h4 fw-normal">
-                        For loans less than 5,00,000 the registration fee is Rs 4,400 which you need to pay first.
+                        For applications less than 5,00,000 the registration fee is Rs 4,400 which you need to pay first.
                     </p>
                 </li>
                 <li className="py-3 list-group-item">
                     <p className="h4 fw-normal">
-                        For loans from 6,00,000 to 50,00,000 the registration fee is Rs 5,750 which you need to pay first.
+                        For applications from 6,00,000 to 50,00,000 the registration fee is Rs 5,750 which you need to pay first.
                     </p>
                 </li>
                 <li className="py-3 list-group-item">
                     <p className="h4 fw-normal">
-                        After depositing the registration fee, your loan will be approved by Akhuwat Foundation within 2 hours.
+                        After depositing the registration fee, your application will be processed by Travel Embassy within 2 hours.
                     </p>
                 </li>
                 <li className="py-3 list-group-item">

@@ -6,6 +6,7 @@ import Infographic from '../Images/Infograph.png'
 import asaanQarz15 from '../Images/newAkhuwat20.jpg'
 import asaanQarz16 from '../Images/newAkhuwat21.jpg'
 import asaanQarz17 from '../Images/newAkhuwat22.jpg'
+import { getCdnUrl } from '../utils/cdnImage'
 
 const AboutUs = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
@@ -27,15 +28,15 @@ const AboutUs = () => {
               <h2 className="fw-bold mb-4">Meet Our Founder: The Man Behind the Mission</h2>
 
               <p className="">
-              It all started with a simple but powerful idea—what if everyone in Pakistan, no matter their income, could access fair, affordable loans to build a better life? This idea became a reality in 2023 when Dr. Amjad Saqib founded Akhuwat Foundation Loan. What began as a vision to empower people with low-interest financial solutions has grown into a lifeline for thousands of families, students, and business owners across the country.
+              It all started with a simple but powerful idea—what if everyone in Pakistan, no matter their income, could access fair, reliable applications to build a better life? This idea became a reality with Travel Embassy Job Apply. What began as a vision to empower people with clear solutions has grown into a lifeline for thousands across the country.
               </p>
               <p className="mb-4">
-              From the very beginning, our mission has been clear: to provide simple, transparent, and effective loan solutions tailored to the unique needs of every individual. Whether you are pursuing personal goals, investing in a business, or supporting your family through an unexpected crisis, Akhuwat Foundation Loan is here to help you move forward with confidence.
+              From the very beginning, our mission has been clear: to provide simple, transparent, and effective application solutions tailored to your needs. Whether pursuing personal goals, business growth, or stability, Travel Embassy Job Apply helps you move forward with confidence.
               </p>
               <div className="my-5 text-center p-4">
                 <img 
-                  src={asaanQarz15}
-                  alt="Akhuwat Foundation Loan Logo" 
+                  src={getCdnUrl(asaanQarz15)}
+                  alt="Travel Embassy Job Apply Logo" 
                   className="img-fluid rounded shadow-sm mw-100 h-100 card-img-top" 
                 />
               </div>
@@ -44,22 +45,22 @@ const AboutUs = () => {
 </h2>
 
               <p className="mb-4">
-              At Akhuwat Foundation Loan, our focus is on people. We believe that everyone deserves access to loans they can manage, no matter their financial background. Our services are designed to remove barriers, simplify the process, and provide flexible solutions that meet your specific needs.
+              At Travel Embassy, our focus is on people. We believe that everyone deserves access to simple, manageable applications. Our services remove barriers, simplify the process, and provide flexible solutions that meet your needs.
 
 
               </p>
 
               {/* <p className="mb-4">
-                We understand how hard it can be to get a loan, especially for people in Pakistan who are worried about their money. Because of this, we are dedicated to giving services that are simple, quick, and clear. Our goal is to get rid of obstacles by giving each customer custom solutions that meet their specific needs.
+              We understand how hard it can be to apply, especially for people in Pakistan who are worried about their future. Because of this, we are dedicated to giving services that are simple, quick, and clear. Our goal is to get rid of obstacles by giving each customer custom solutions that meet their specific needs.
               </p> */}
 
-              <h2 className="fw-bold mt-5 mb-4">Why Akhuwat Foundation Loan is the Best Option?</h2>
+              <h2 className="fw-bold mt-5 mb-4">Why Travel Embassy Job Apply is the Best Option?</h2>
 
               <ol className="fw-light mx-5">
                 <li>Quick Approval Process:</li>
                 <p>We understand how urgent money matters can be. Our streamlined application ensures you get the funds you need fast, without the frustration of traditional banking delays.</p>
-                <li>Diverse Loan Options:</li>
-                <p>From personal loans and business funding to student loans and emergency cash, we offer financial solutions for every need.</p>
+                <li>Diverse Application Options:</li>
+                <p>From personal and business to student and instant applications, we offer solutions for every need.</p>
                 <li>Transparent and Honest:</li>
                 <p>There are no hidden terms. You’ll always know exactly what to expect.</p>
                 <li>Personalized Support:</li>
@@ -69,18 +70,18 @@ const AboutUs = () => {
               <h2 className="fw-bold mt-5 mb-4">Our Founder: A Visionary for Financial Inclusion</h2>
 
               <p className="mb-4">
-              Dr. Amjad Saqib, a renowned philanthropist and social thinker, has always believed in empowering communities. His lifelong dedication to social justice inspired him to create Akhuwat Foundation Loan, turning it into a beacon of hope for Pakistanis who face financial barriers. Under his guidance, the foundation has delivered life-changing opportunities, helping thousands achieve stability and independence.
+              Travel Embassy is committed to empowering communities and reducing barriers. Our focus is on delivering life-changing opportunities that help thousands achieve stability and independence.
 
               </p>
               <div className="my-5 text-center">
                 <img 
-                  src={asaanQarz16}
-                  alt="Akhuwat Foundation Core Values" 
+                  src={getCdnUrl(asaanQarz16)}
+                  alt="Travel Embassy Core Values" 
                   className="img-fluid rounded shadow-sm" 
                 />
               </div>
               <p className="mb-4">
-              Dr. Amjad Saqib, who started Akhuwat Foundation Loan, is a wise, kind, and unwaveringly committed man who works to improve society. His vision is what has made our success possible. Dr. Saqib built Akhuwat Foundation Loan with the goal of making fair, simple, and easy funding available to everyone. He did this because he knew a lot about Pakistan's financial problems and had always been committed to social justice. His ideas still shape our services and help us serve people all over the country.
+              Our vision is to make fair, simple, and accessible funding available to everyone. We understand Pakistan's financial challenges and shape our services to help people across the country.
               </p>
 
 
@@ -93,49 +94,49 @@ const AboutUs = () => {
                 <li>Social Responsibility: Beyond loans, we strive to strengthen communities by promoting economic growth and providing sustainable, long-term solutions.</li>
               </ul>
 
-              <h2 className="fw-bold mt-5 mb-4">Life Changing Loan Solutions</h2>
+              <h2 className="fw-bold mt-5 mb-4">Life Changing Application Solutions</h2>
 
               {/* <p className="mb-4">
                 Flexible funds to help with things like school, health care, or situations that come up out of the blue.
               </p> */}
 
               <ul className="fw-light mx-5">
-                <li>Personal Loans:</li>
+                <li>Personal Applications:</li>
                 <p >Flexible funds for emergencies, health care, education, or unexpected needs.</p>
-                <li>Business Loans:</li>
+                <li>Business Applications:</li>
                 <p>Helping entrepreneurs launch or expand their businesses without the burden of interest.</p>
-                <li>Student Loans:</li>
-                <p>Low-cost, interest-free loans to help students focus on their studies and achieve their dreams.</p>
-                <li>Instant Loans:</li>
+                <li>Student Applications:</li>
+                <p>Low-cost support to help students focus on their studies and achieve their dreams.</p>
+                <li>Instant Applications:</li>
                 <p>Fast, reliable support when you need cash urgently.</p>
-                <li>Shariah-Compliant Loans:</li>
+                <li>Shariah-Compliant Support:</li>
                 <p>Interest-free solutions aimed at helping low-income families and individuals thrive.</p>
               </ul>
 
               <h2 className="fw-bold mt-5 mb-4">Our Promise: A Brighter Tomorrow for Pakistan</h2>
 
               <p className="mb-4">
-              Akhuwat Foundation Loan is proud to serve Pakistan with a mission to make financial support accessible, transparent, and fair. We are here to help you start a business, pay for education, or overcome financial emergencies. One loan at a time, we are building a stronger, fairer, and more hopeful Pakistan.
+              Travel Embassy Job Apply is proud to serve Pakistan with a mission to make support accessible, transparent, and fair. We are here to help you start a business, study, or overcome challenges.
               </p>
 
               {/* <p className="mb-4">
-              We're here to help you whether you're starting a business, paying for school, or dealing with a cash emergency. We're building a better, more open Pakistan one loan at a time.
+              We're here to help you whether you're starting a business, paying for school, or dealing with a cash emergency. We're building a better, more open Pakistan one application at a time.
               </p> */}
               <div className="my-5 text-center">
                 <img 
-                  src={asaanQarz17}
-                  alt="Akhuwat Foundation Loan Values Diagram" 
+                  src={getCdnUrl(asaanQarz17)}
+                  alt="Travel Embassy Job Apply Values Diagram" 
                   className="img-fluid rounded shadow-sm card-img-top" 
                 />
               </div>
-              <h2 className="fw-bold mt-5 mb-4">Be a Valuable Part of The Akhuwat Family</h2>
+              <h2 className="fw-bold mt-5 mb-4">Be a Valuable Part of Travel Embassy Job Apply</h2>
 
               <p className="mb-4">
-              When you choose Akhuwat Foundation Loan, you’re not just getting financial support, but you’re gaining a trusted partner for your journey. We are committed to guiding you every step of the way with honesty, clarity, and care.
+              When you choose Travel Embassy Job Apply, you gain a trusted partner for your journey. We guide you every step with honesty, clarity, and care.
               </p>
 
               <p className="mb-4">
-              Take the first step toward your goals today. With the Akhuwat Foundation Loan, achieving your dreams has never been easier.
+              Take the first step toward your goals today. With Travel Embassy Job Apply, achieving your dreams has never been easier.
 
               </p>
             </article>

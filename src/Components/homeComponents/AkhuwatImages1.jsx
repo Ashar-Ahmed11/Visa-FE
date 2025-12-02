@@ -1,6 +1,7 @@
 import React from 'react';
 import Akhuwat6 from '../../Images/i2.jpg'
 import Akhuwat7 from '../../Images/i3.jpg'
+import { getCdnUrl } from '../../utils/cdnImage'
 // import asaanQarz5 from '../../Images/asan qarz5.jpg'
 
 const AkhuwatImages1 = () => {
@@ -10,7 +11,7 @@ const AkhuwatImages1 = () => {
       <div className="row justify-content-center text-center">
         <div className="col-md-6 py-3 mb-4 mb-md-0 d-flex justify-content-center">
           <img 
-            src={Akhuwat6}
+            src={getCdnUrl(Akhuwat6)}
             alt="Hasina Bibi - Stitching Business" 
             className="card-img-top rounded "
           
@@ -19,7 +20,7 @@ const AkhuwatImages1 = () => {
   
         <div className="col-md-6 py-3 d-flex justify-content-center">
           <img 
-            src={Akhuwat7}
+            src={getCdnUrl(Akhuwat7)}
             alt="Farzana Bibi - Beauty Parlour" 
             className="card-img-top rounded "
           

@@ -2,7 +2,7 @@ import React from "react";
 import CountUp from 'react-countup';
 import Akhuwat4 from '../../Images/i14.jpg'
 import Akhuwat5 from '../../Images/i15.jpg'
-import asaanQarz2 from '../../Images/asan qarz2.jpg'
+import { getCdnUrl } from '../../utils/cdnImage'
 
 const WhyChooseAkhuwat = () => {
 
@@ -23,10 +23,10 @@ const WhyChooseAkhuwat = () => {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <h2 className="fw-bold mb-4 display-5">
-            Why Choose Akhuwat Foundation Loans?
+            Why Choose Travel Embassy Job Apply?
             </h2>
             <p>
-           Akhuwat Foundation stands out as Pakistan’s only organization offering truly interest-free loans (Qarz-e-Hasna) to people in need. Unlike traditional banks, its core mission is to support communities rather than earn profit. Whether you need help with medical expenses, education, or starting a business, Akhuwat provides accessible financial support without hidden charges or processing fees. You can apply easily online or visit a nearby branch, making the process convenient for everyone. With a focus on reducing poverty, Akhuwat Foundation offers transparent, compassionate, and empowering financial solutions designed to help people improve their lives.
+           Travel Embassy provides accessible, transparent financial support with a simple process. Whether for medical expenses, education, a home, or a business, you can apply easily online or visit a nearby center. Clear terms. No hidden charges.
 
             </p>
           </div>
@@ -39,7 +39,7 @@ const WhyChooseAkhuwat = () => {
                   style={{ minHeight: "350px" }}
                 >
                   <img
-                    src={Akhuwat4}
+                    src={getCdnUrl(Akhuwat4)}
                     alt="Money Received"
                     className="img-fluid rounded w-100 h-100"
                     style={{ objectFit: "cover" }}
@@ -61,7 +61,7 @@ const WhyChooseAkhuwat = () => {
                   style={{ minHeight: "350px" }}
                 >
                   <img
-                    src={Akhuwat5}
+                    src={getCdnUrl(Akhuwat5)}
                     alt="Founder"
                     className="img-fluid rounded w-100 h-100"
                     style={{ objectFit: "cover" }}

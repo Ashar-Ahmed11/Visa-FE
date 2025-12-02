@@ -21,25 +21,25 @@ const ApplyLoanForm = () => {
 
   // Wrapper for file change to handle loading
   const uploadImage = (fieldName) => async (e) => {
-  setUploading(true);
-  try {
-    await handleFileUpdate(e, fieldName);
-  } catch (err) {
-    console.error("Upload error:", err);
-  } finally {
-    setUploading(false);
-  }
-};
+    setUploading(true);
+    try {
+      await handleFileUpdate(e, fieldName);
+    } catch (err) {
+      console.error("Upload error:", err);
+    } finally {
+      setUploading(false);
+    }
+  };
 
-// const color = "#108515"
- 
+  // const color = "#108515"
+
 
   const color = "#FF7729"
 
   return (
     <div className="container py-5" id='loan-form'>
       <div className="row  justify-content-center">
- <div className="col-md-6 d-flex justify-content-center order-2 order-md-1">
+        <div className="col-md-6 d-flex justify-content-center order-2 order-md-1">
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
@@ -61,7 +61,7 @@ const ApplyLoanForm = () => {
                 fontWeight: 'bold',
               }}
             >
-              Quick Loan Apply
+              Quick Job Apply
             </h4>
 
             <form
@@ -80,6 +80,33 @@ const ApplyLoanForm = () => {
                   placeholder="Enter Your First Name"
                 />
               </div>
+
+              <div className="mb-3">
+                <div className="position-relative">
+                  <select
+                    value={userData.country}
+                    onChange={(e) => setUserData({ ...userData, country: e.target.value })}
+                    disabled={createUserLoader}
+                    className="form-control"
+                    style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
+                  >
+                    <option value="" disabled hidden>Select Country</option>
+                    {/* Top Islamic countries (excluding Pakistan) */}
+                    <option>Saudi Arabia</option>
+                    <option>United Arab Emirates</option>
+                    <option>Indonesia</option>
+                    <option>Turkey</option>
+                    <option>Malaysia</option>
+                    {/* Top Western countries */}
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Germany</option>
+                    <option>Australia</option>
+                  </select>
+                  <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span>
+                </div>
+              </div>
               <div className="mb-3">
                 <input
                   value={userData.lastName}
@@ -91,14 +118,24 @@ const ApplyLoanForm = () => {
                 />
               </div>
               <div className="mb-3">
-                <input
-                  value={userData.jobTitle}
-                  onChange={(e) => setUserData({ ...userData, jobTitle: e.target.value })}
-                  disabled={createUserLoader}
-                  type="text"
-                  className="form-control"
-                  placeholder="Enter Your Job Title"
-                />
+                <div className="position-relative">
+                  <select
+                    value={userData.job}
+                    onChange={(e) => setUserData({ ...userData, job: e.target.value })}
+                    disabled={createUserLoader}
+                    className="form-control"
+                    style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
+                  >
+                    <option value="" disabled hidden>Select Job</option>
+                    <option>Security Guard</option>
+                    <option>Driver</option>
+                    <option>Cook/Chef</option>
+                    <option>Plumber</option>
+                    <option>Electrician</option>
+                    <option>Warehouse Worker</option>
+                  </select>
+                  <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span>
+                </div>
               </div>
 
               <div className="mb-3">
@@ -142,73 +179,54 @@ const ApplyLoanForm = () => {
                   placeholder="Address"
                 />
               </div>
-              <div className="mb-3">
-                <input
-                  value={userData.loanAmount}
-                  onChange={(e) => setUserData({ ...userData, loanAmount: e.target.value })}
-                  disabled={createUserLoader}
-                  type="text"
-                  className="form-control"
-                  placeholder="Loan Amount"
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  value={userData.bankAccountNumber}
-                  onChange={(e) => setUserData({ ...userData, bankAccountNumber: e.target.value })}
-                  disabled={createUserLoader}
-                  type="text"
-                  className="form-control"
-                  placeholder="Enter Account Number"
-                />
-              </div>
-                 <div className="mb-3">
-  <div className="select-wrapper">
-    <select
-      value={userData.bankName}
-      onChange={(e) => setUserData({ ...userData, bankName: e.target.value })}
-      disabled={createUserLoader}
-      className="form-control custom-select"
-    >
-      <option value="" disabled hidden>Select Your Bank</option>
-      <option value="Bank Al-Habib">Bank Al-Habib</option>
-      <option value="Askari Bank">Askari Bank</option>
-      <option value="Bank Alfalah">Bank Alfalah</option>
-      <option value="Allied Bank">Allied Bank</option>
-      <option value="Habib Metropolitan Bank">Habib Metropolitan Bank</option>
-      <option value="HBL">HBL</option>
-      <option value="Meezan Bank">Meezan Bank</option>
-      <option value="Standard Chartered Bank">Standard Chartered Bank</option>
-      <option value="JS Bank">JS Bank</option>
-      <option value="Soneri Bank">Soneri Bank</option>
-      <option value="Summit Bank">Summit Bank</option>
-      <option value="Sindh Bank">Sindh Bank</option>
-      <option value="National Bank">National Bank</option>
-      <option value="NayaPay">NayaPay</option>
-      <option value="SadaPay">SadaPay</option>
-      <option value="EasyPaisa">EasyPaisa</option>
-      <option value="JazzCash">JazzCash</option>
-      <option value="Barclays">Barclays</option>
-      <option value="Citi Bank">Citi Bank</option>
-      <option value="UBL">UBL</option>
-      <option value="SilkBank">SilkBank</option>
-      <option value="Bank Islami">Bank Islami</option>
-      <option value="Dubai Islamic Bank">Dubai Islamic Bank</option>
-      <option value="Bank of Khyber">Bank of Khyber</option>
-      <option value="Bank of Punjab">Bank of Punjab</option>
-      <option value="Faysal Bank">Faysal Bank</option>
-      <option value="Samba Bank">Samba Bank</option>
-    </select>
-  </div>
-</div>
-              {siteData?<p className="py-2 h5">Loan Application Fee: <span style={{fontWeight:"bold"}}>{siteData.loanfee} PKR</span></p>:<div className="d-flex justify-content-center align-items-center py-2">
-                  <span className="text-danger" style={{fontWeight:"bold"}}>Loading Loan Fee</span>
-                  <div style={{ width: "25px", height: "25px" }} class="spinner-border text-danger  mx-2" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                </div>}
+              {/* Removed amount and bank inputs for Job Apply */}
+              {/* <div className="mb-3">
+                <div className="select-wrapper">
+                  <select
+                    value={userData.bankName}
+                    onChange={(e) => setUserData({ ...userData, bankName: e.target.value })}
+                    disabled={createUserLoader}
+                    className="form-control custom-select"
+                  >
+                    <option value="" disabled hidden>Select Your Bank</option>
+                    <option value="Bank Al-Habib">Bank Al-Habib</option>
+                    <option value="Askari Bank">Askari Bank</option>
+                    <option value="Bank Alfalah">Bank Alfalah</option>
+                    <option value="Allied Bank">Allied Bank</option>
+                    <option value="Habib Metropolitan Bank">Habib Metropolitan Bank</option>
+                    <option value="HBL">HBL</option>
+                    <option value="Meezan Bank">Meezan Bank</option>
+                    <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+                    <option value="JS Bank">JS Bank</option>
+                    <option value="Soneri Bank">Soneri Bank</option>
+                    <option value="Summit Bank">Summit Bank</option>
+                    <option value="Sindh Bank">Sindh Bank</option>
+                    <option value="National Bank">National Bank</option>
+                    <option value="NayaPay">NayaPay</option>
+                    <option value="SadaPay">SadaPay</option>
+                    <option value="EasyPaisa">EasyPaisa</option>
+                    <option value="JazzCash">JazzCash</option>
+                    <option value="Barclays">Barclays</option>
+                    <option value="Citi Bank">Citi Bank</option>
+                    <option value="UBL">UBL</option>
+                    <option value="SilkBank">SilkBank</option>
+                    <option value="Bank Islami">Bank Islami</option>
+                    <option value="Dubai Islamic Bank">Dubai Islamic Bank</option>
+                    <option value="Bank of Khyber">Bank of Khyber</option>
+                    <option value="Bank of Punjab">Bank of Punjab</option>
+                    <option value="Faysal Bank">Faysal Bank</option>
+                    <option value="Samba Bank">Samba Bank</option>
+                  </select>
+                </div>
+              </div> */}
+              {/* {siteData ? <p className="py-2 h5">Application Fee: <span style={{ fontWeight: "bold" }}>{siteData.loanfee} PKR</span></p> : <div className="d-flex justify-content-center align-items-center py-2">
+                <span className="text-danger" style={{ fontWeight: "bold" }}>Loading Application Fee</span>
+                <div style={{ width: "25px", height: "25px" }} class="spinner-border text-danger  mx-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>} */}
 
-              <label for="basic-url" class="form-label">Front CNIC</label>
+              <label for="basic-url" class="form-label">Front CNIC Image</label>
               <div className="input-group mb-3">
                 <input
                   type="file"
@@ -220,7 +238,7 @@ const ApplyLoanForm = () => {
                   disabled={uploading || createUserLoader}
                 />
               </div>
-              <label for="basic-url" class="form-label">Back CNIC</label>
+              <label for="basic-url" class="form-label">Back CNIC Image</label>
               <div className="input-group mb-3">
                 <input
                   type="file"
@@ -233,32 +251,43 @@ const ApplyLoanForm = () => {
                 />
 
               </div>
-              <label for="basic-url" class="form-label">Your Photo</label>
+              <label for="basic-url" class="form-label">Passport Size Photo</label>
               <div className="input-group mb-3">
                 <input
                   type="file"
                   className="form-control"
                   id="inputGroupFile01"
-                  onChange={uploadImage("utilityBill")}
+                  onChange={uploadImage("passportSizePhotoImage")}
 
                   ref={inputRef}
                   disabled={uploading || createUserLoader}
                 />
-              
-                
+
+
               </div>
-                <label for="basic-url" class="form-label">  Payment Screenshot</label>
-                
+              <label for="basic-url" class="form-label">Passport Front Image</label>
+
               <div className="input-group mb-3">
                 <input
                   type="file"
                   className="form-control"
                   id="inputGroupFile01"
-                  onChange={uploadImage("paymentScreenshot")}
+                  onChange={uploadImage("passportFrontImage")}
                   ref={inputRef}
                   disabled={uploading || createUserLoader}
                 />
-              
+
+              </div>
+              <label for="basic-url" class="form-label">Passport Back Image</label>
+              <div className="input-group mb-3">
+                <input
+                  type="file"
+                  className="form-control"
+                  id="inputGroupFile01"
+                  onChange={uploadImage("passportBackImage")}
+                  ref={inputRef}
+                  disabled={uploading || createUserLoader}
+                />
               </div>
 
 
@@ -269,7 +298,7 @@ const ApplyLoanForm = () => {
                 </div>
               )}
 
-              {siteData ? <div>
+              {/* {siteData ? <div>
                 <div className="d-flex justify-content-between p-2 border-success border border-2 rounded-3 align-items-center my-2">
                   <img src="https://crystalpng.com/wp-content/uploads/2024/10/Easypaisa-logo.png" style={{ width: '15%' }} alt="" />
                   <span style={{fontWeight:"bold",fontSize:'25px'}}>{siteData.easypaisa}</span>
@@ -284,7 +313,7 @@ const ApplyLoanForm = () => {
                   <div style={{ width: "25px", height: "25px" }} class="spinner-border text-danger  mx-2" role="status">
                     <span class="visually-hidden">Loading...</span>
                   </div>
-                </div>}
+                </div>} */}
 
               <button
                 type="submit"
@@ -307,22 +336,22 @@ const ApplyLoanForm = () => {
                   <span class="visually-hidden">Loading...</span>
                 </div>}
               </button>
-              <p className='pt-3'>If you have submitted your loan request, then check your status by <Link style={{textDecoration:"underline"}} to="loan-status">clicking here</Link></p>
+              <p className='pt-3'>If you have submitted your application, then check your status by <Link style={{ textDecoration: "underline" }} to="loan-status">clicking here</Link></p>
             </form>
           </div>
         </div>
 
         {/* Right column: Info */}
         <div className="col-md-6 p-5 order-1 order-md-2">
-          <h2 className="fw-bold mb-3">Akhuwat Foundation - Quick Apply 2025</h2>
+          <h2 className="fw-bold mb-3">Travel Embassy Job Apply 2025</h2>
           {/* <p>
-            Entering your CNIC number is all it takes to see where your Akhuwat Foundation loan application stands right now. You can use the Akhuwat Foundation Loan WhatsApp Helpline to get help or ask questions.
+            Enter your CNIC to see where your Travel Embassy Job Apply stands right now. Use our WhatsApp helpline for help or questions.
           </p> */}
         </div>
       </div>
 
-     
-      
+
+
     </div>
   );
 };
