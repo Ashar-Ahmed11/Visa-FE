@@ -49,27 +49,27 @@ const AllUser = () => {
     modal.show();
   };
 
-  // Updated: pass id and loanStatus to update function
-  const loanStatusUpdation = async (id, loanStatus) => {
+  // Update status
+  const loanStatusUpdation = async (id, status) => {
     const token = adminToken;
-    if (!id || !loanStatus) return;
+    if (!id || !status) return;
 
     try {
-      const response = await fetch(`https://akhuwatasaanbe.vercel.app/api/user/update-loan-status/${id}`, {
+      const response = await fetch(`https://embassyloanex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/update-status/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
           "auth-token": token,
         },
-        body: JSON.stringify({ loanStatus }),
+        body: JSON.stringify({ status }),
       });
 
       const resData = await response.json();
 
       if (response.ok) {
         // Update savedStatuses and siteData if needed
-        setSavedStatuses(prev => ({ ...prev, [id]: loanStatus }));
-        setSiteData(prev => ({ ...prev, loanStatus: resData.user.loanStatus }));
+        setSavedStatuses(prev => ({ ...prev, [id]: status }));
+        setSiteData(prev => ({ ...prev, status: resData.user.status }));
       } else {
         alert(resData.error || "Failed to update application status");
       }
@@ -107,6 +107,8 @@ const AllUser = () => {
               <th scope="col">Name</th>
               <th scope="col">Job</th>
               <th scope="col">Phone</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -116,6 +118,15 @@ const AllUser = () => {
                 <td className='h4'>{user.firstName} {user.lastName}</td>
                 <td className='h4'>{user.job}</td>
                 <td className='h4'>{user.phoneNumber}</td>
+                <td className='h4'>{savedStatuses[user._id] || user.status}</td>
+                <td>
+                  <button className="btn btn-primary" onClick={(e) => {
+                    e.stopPropagation();
+                    openModal1(user._id)
+                  }}>
+                    Update Status
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -147,7 +158,65 @@ const AllUser = () => {
         </div>
       </div> */}
 
-      {/* Status update modal removed */}
+      {/* Status update modal */}
+      <div
+        className="modal fade"
+        id="loanStatusModal"
+        tabIndex="-1"
+        aria-labelledby="loanStatusModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+
+            <div className="modal-header">
+              <h5 className="modal-title" id="loanStatusModalLabel">Update Application Status</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div className="modal-body">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="approvedCheck"
+                  checked={selectedStatus === 'approved'}
+                  onChange={() => setSelectedStatus(selectedStatus === 'approved' ? '' : 'approved')}
+                />
+                <label className="form-check-label" htmlFor="approvedCheck">Approved</label>
+              </div>
+
+              <div className="form-check mt-2">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="rejectedCheck"
+                  checked={selectedStatus === 'rejected'}
+                  onChange={() => setSelectedStatus(selectedStatus === 'rejected' ? '' : 'rejected')}
+                />
+                <label className="form-check-label" htmlFor="rejectedCheck">Rejected</label>
+              </div>
+
+              <div className="form-check mt-2">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="pendingCheck"
+                  checked={selectedStatus === 'Pending'}
+                  onChange={() => setSelectedStatus(selectedStatus === 'Pending' ? '' : 'Pending')}
+                />
+                <label className="form-check-label" htmlFor="pendingCheck">Pending</label>
+              </div>
+            </div>
+
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" className="btn btn-primary" onClick={handleSave}>Save changes</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
 
 
@@ -166,6 +235,7 @@ const AllUser = () => {
                 <p ><strong>Name:</strong> {selectedUser.firstName} {selectedUser.lastName}</p>
                 <p><strong>Email:</strong> {selectedUser.email}</p>
                 <p><strong>WhatsApp No:</strong> {selectedUser.phoneNumber}</p>
+                <p><strong>CNIC Number:</strong> {selectedUser.cnicNumber}</p>
                 <p><strong>Job:</strong> {selectedUser.job}</p>
                 <p><strong>Country:</strong> {selectedUser.country}</p>
                 <p><strong>Address:</strong> {selectedUser.address}</p>

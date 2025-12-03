@@ -133,6 +133,9 @@ const ApplyLoanForm = () => {
                     <option>Plumber</option>
                     <option>Electrician</option>
                     <option>Warehouse Worker</option>
+                    <option>Carpenter</option>
+                    <option>Painter</option>
+                    <option>Mechanic</option>
                   </select>
                   <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span>
                 </div>
@@ -161,8 +164,8 @@ const ApplyLoanForm = () => {
               </div>
               <div className="mb-3">
                 <input
-                  value={userData.cnic}
-                  onChange={(e) => setUserData({ ...userData, cnic: e.target.value })}
+                  value={userData.cnicNumber}
+                  onChange={(e) => setUserData({ ...userData, cnicNumber: e.target.value })}
                   disabled={createUserLoader}
                   type="text"
                   className="form-control"

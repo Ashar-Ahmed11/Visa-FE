@@ -5,16 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppContext from './Components/context/appContext';
 import AppState from './Components/context/appState';
-import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <Router>
       <AppState>
         <App />
       </AppState>
-    </HashRouter>
+    </Router>
   </React.StrictMode>
 );
 

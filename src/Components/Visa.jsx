@@ -21,8 +21,8 @@ const Visa = () => {
           >
             <div className="container">
               <h1 className="display-4 fw-bold mb-4">Visa</h1>
-         <p className="mb-2">Rely on Canada Job Guide for professional documentation review and step-by-step visa consultancy. We focus on transparency, professionalism, and personalized guidance—supporting you with clear information and assistance at every stage of your Canada job visa process.</p>
-         <p className="mb-2">Disclaimer: Canada Job Guide is a private consultancy. We are not affiliated with the Government of Canada and do not guarantee visa approval
+         <p className="mb-2">Rely on Travels Embassy for professional documentation review and step-by-step visa consultancy. We focus on transparency, professionalism, and personalized guidance—supporting you with clear information and assistance at every stage of your job visa process.</p>
+         <p className="mb-2">Disclaimer: Travels Embassy is a private consultancy. We are not affiliated with the Government of Canada and do not guarantee visa approval
 
 </p>
               {/* <h5 className="mb-3">Need Help with Canada Job Visas?</h5>
@@ -113,7 +113,7 @@ const Visa = () => {
               </div>
               <h5 className="fw-bold mb-3">Visa Consultation</h5>
               <p className="small">
-                Get personalized consultancy from Canada Job Guide to explore the right Canada visa pathway and better understand immigration policies and requirements before applying.
+                Get personalized consultancy from Travels Embassy to explore the right visa pathway and better understand immigration policies and requirements before applying.
               </p>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Visa = () => {
               </div>
               <h5 className="fw-bold mb-3">Online Application</h5>
               <p className="text-muted small">
-                Get step-by-step consultancy from Canada Job Guide to help you prepare your Canada visa application with clarity and confidence based on publicly available guidelines.
+                Get step-by-step consultancy from Travels Embassy to help you prepare your visa application with clarity and confidence based on publicly available guidelines.
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ const Visa = () => {
               </div>
               <h5 className="fw-bold mb-3">Customer Support</h5>
               <p className="text-muted small">
-                Receive friendly and informative support from Canada Job Guide, with our team offering guidance and consultancy at every stage of the visa process.
+                Receive friendly and informative support from Travels Embassy, with our team offering guidance and consultancy at every stage of the visa process.
               </p>
             </div>
           </div>
@@ -152,7 +152,7 @@ const Visa = () => {
               </div>
               <h5 className="fw-bold mb-3">Work Visa</h5>
               <p className="text-muted small">
-                Want to build your career abroad? Our work visa can create opportunities to explore international careers. At Canada Job Guide, we provide professional consultancy for skilled and unskilled workers, helping you understand work applications for Canada, Saudi Arabia, Malaysia, Oman, UAE, and other popular destinations, based on publicly available requirements.
+                Want to build your career abroad? Our work visa can create opportunities to explore international careers. At Travels Embassy, we provide professional consultancy for skilled and unskilled workers, helping you understand work applications for Canada, Saudi Arabia, Malaysia, Oman, UAE, and other popular destinations, based on publicly available requirements.
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ const Visa = () => {
                 <div className="col-lg-6">
                   <h2 className="fw-bold mb-4">Experience Hassle-Free Visa Applications</h2>
                   <p className="mb-0">
-                    At Canada Job Guide, we simplify the Canada visa process, so you can focus on your future. Our experienced team provides clear step-by-step guidance and professional document support, helping you navigate each stage of your application and compliance and ease. From consultation to submission, we ensure a process that is accurate, transparent, and tailored to your needs. We are a private consultancy and encourage clients to verify information with official sources.
+                    At Travels Embassy, we simplify the visa process, so you can focus on your future. Our experienced team provides clear step-by-step guidance and professional document support, helping you navigate each stage of your application with compliance and ease. From consultation to submission, we ensure a process that is accurate, transparent, and tailored to your needs. We are a private consultancy and encourage clients to verify information with official sources.
                   </p>
                 </div>
               </div>

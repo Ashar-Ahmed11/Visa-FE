@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import AppContext from "../context/appContext";
 import Akhuwat13 from '../../Images/i20-min.jpg'
 import { getCdnUrl } from '../../utils/cdnImage'
-const AkhuwatLoanStatus = () => {
+const Akhuwatstatus = () => {
   const { fetchUserByCnic } = useContext(AppContext);
   const [cnicNumber, setCnicNumber] = useState("");
   const [user, setUser] = useState(null);
@@ -126,14 +126,14 @@ const AkhuwatLoanStatus = () => {
                     <strong>Application Status:</strong>{" "}
                     <span
                       className={`fw-bold ${
-                        user.loanStatus === "approved"
+                        user.status === "approved"
                           ? "text-success"
-                          : user.loanStatus === "rejected"
+                          : user.status === "rejected"
                           ? "text-danger"
                           : "text-warning"
                       }`}
                     >
-                      {user.loanStatus}
+                      {user.status}
                     </span>
                   </p>
                 </>
@@ -160,4 +160,4 @@ const AkhuwatLoanStatus = () => {
   );
 };
 
-export default AkhuwatLoanStatus;
+export default Akhuwatstatus;

@@ -153,10 +153,10 @@ const JobCategories = () => {
         <div  data-aos="fade-left"
             data-aos-duration="500" className="col-md-6 col-lg-4">
           <div className="card h-100 shadow-lg border-0">
-            <img 
+              <img 
               src={getCdnUrl(img7)}
               className="card-img-top" 
-              alt="Warehouse Worker"
+              alt="Carpenter"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
@@ -164,7 +164,7 @@ const JobCategories = () => {
               <p className="text-muted mb-1">Salary</p>
               <h3 className="fw-bold mb-1">3100</h3>
               <p className="text-muted small">Canadian Dollar-commission 310</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Carpenter')}>Apply Now</button>
             </div>
           </div>
         </div>
@@ -174,7 +174,7 @@ const JobCategories = () => {
             <img 
               src={getCdnUrl(img8)}
               className="card-img-top" 
-              alt="Warehouse Worker"
+              alt="Painter"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
@@ -182,7 +182,7 @@ const JobCategories = () => {
               <p className="text-muted mb-1">Salary</p>
               <h3 className="fw-bold mb-1">3300</h3>
               <p className="text-muted small">Canadian Dollar-commission 310</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Painter')}>Apply Now</button>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ const JobCategories = () => {
             <img 
               src={getCdnUrl(img9)}
               className="card-img-top" 
-              alt="Warehouse Worker"
+              alt="Mechanic"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
@@ -200,7 +200,7 @@ const JobCategories = () => {
               <p className="text-muted mb-1">Salary</p>
               <h3 className="fw-bold mb-1">3400</h3>
               <p className="text-muted small">Canadian Dollar-commission 310</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Mechanic')}>Apply Now</button>
             </div>
           </div>
         </div>

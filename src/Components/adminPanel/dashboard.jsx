@@ -89,7 +89,7 @@ const Dashboard = () => {
               placeholder="Site Phone Number"
               className="form-control my-2"
             />
-            <h4>Site Easypaisa Number</h4>
+            {/* <h4>Site Easypaisa Number</h4>
             <input
               value={siteData.easypaisa}
               onChange={(e) => setSiteData({ ...siteData, easypaisa: e.target.value })}
@@ -112,7 +112,7 @@ const Dashboard = () => {
               type="text"
               placeholder="Application Fee"
               className="form-control my-2"
-            />
+            /> */}
 
             <div className="d-flex">
               <button disabled={editLoader} onClick={() => editSiteInfo()} className="btn btn-outline-primary my-2">

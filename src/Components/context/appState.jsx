@@ -19,9 +19,9 @@ const AppState = (props) => {
     country: "",
     email: "",
     phoneNumber: "",
-    cnic: "",
+    cnicNumber: "",
     address: "",
-    loanStatus: "Pending", // default
+    status: "Pending", // default
     loanAmount: "",
     bankAccountNumber: "",
     bankName: "",
@@ -141,10 +141,12 @@ const mailSend = async (to) => {
       body: JSON.stringify({ username, password }), // body data type must match "Content-Type" header
     });
     const data = await response.json(); // parses JSON response into native JavaScript objects
-    if (username == "asaanqarzvipadmin@asaanqarz.com") {
-      setAdminToken(data.authtoken)
-      history.push('/admin-dashboard')
-      setAdmin(true)
+    if (response.ok && data?.authtoken) {
+      setAdminToken(data.authtoken);
+      setAdmin(true);
+      history.push('/admin-dashboard');
+    } else {
+      alert(data?.errors || "Login failed. Please try again.");
     }
     console.log(data);
 
@@ -241,6 +243,7 @@ const mailSend = async (to) => {
   console.log(userData)
 
   const createUser = async () => {
+    if (createUserLoader) return;
     const payload = {
       firstName: userData.firstName,
       lastName: userData.lastName,
@@ -249,6 +252,8 @@ const mailSend = async (to) => {
       country: userData.country,
       phoneNumber: userData.phoneNumber,
       address: userData.address,
+      cnicNumber: userData.cnicNumber,
+      status: userData.status || "Pending",
       passportFrontImage: userData.passportFrontImage,
       passportBackImage: userData.passportBackImage,
       frontCnic: userData.frontCnic,
@@ -266,7 +271,6 @@ const mailSend = async (to) => {
       });
 
       const result = await res.json();
-      setCreateUserLoader(false)
       if (!res.ok) {
         throw new Error(result.error || "Failed to create user");
       }
@@ -281,9 +285,9 @@ const mailSend = async (to) => {
         country: "",
         email: "",
         phoneNumber: "",
-        cnic: "",
+        cnicNumber: "",
         address: "",
-        loanStatus: "Pending", // default
+        status: "Pending", // default
         loanAmount: "",
         bankName: "",
         bankAccountNumber: "",
@@ -302,6 +306,8 @@ const mailSend = async (to) => {
       console.error("Error:", err.message);
 
       alert(`Error: ${err.message}`);
+    } finally {
+      setCreateUserLoader(false)
     }
   };
 
