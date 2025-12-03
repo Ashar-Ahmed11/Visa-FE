@@ -55,19 +55,20 @@ const Crousal = () => {
         }}
       />
 
+
       {/* Content row */}
       <div className="row w-100 position-relative" style={{ zIndex: 2 }}>
         <div className={`col-md-6 ${isMobile ? 'col-12 mb-4' : ''} d-flex align-items-center flex-column justify-content-center`}>
           <h1
             data-aos="fade-right"
             data-aos-duration="1500"
-            className={`${isMobile ? 'fw-bold display-4' : 'display-5 fw-bold px-5'}`}
+            className={`${isMobile ? 'fw-bold display-4' : 'display-5 fw-bold px-5'} heading`}
             style={{ color: 'white' }}
           >
-            Travel Embassy Job Apply — Fast, reliable, helpful.
+            Travel Embassy Job- Work Beyond Borders
           </h1>
 
-          <p className="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus explicabo magnam, ipsum enim quos corporis aspernatur, consequatur tenetur, ad omnis quis! Est vero doloremque, fuga inventore non sequi? Accusamus.</p>
+          <p className="text-light">From embassy vacancies to global travel jobs, we make your job search simple, secure, and stress-free. Find real opportunities, get expert help, and start your international journey today.</p>
           {/* <Link class="btn btn-primary border-light border-2" to="loan-form" role="button" style={{ backgroundColor: '#FF7729', color: 'white' }} type="button" >Job Apply</Link> */}
 
         </div>
@@ -111,7 +112,7 @@ const Crousal = () => {
               
             </span> */}
             {/* <p className="text-light fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minus explicabo magnam, ipsum enim quos corporis aspernatur, consequatur tenetur, ad omnis quis! Est vero doloremque, fuga inventore non sequi? Accusamus.</p> */}
-            <Link class="btn btn-primary border-light border-2 px-4 py-2" to="loan-form" role="button" style={{ backgroundColor: '#FF7729', color: 'white' }} type="button" >Start Your Application</Link>
+            <Link class="btn btn-primary border-light border-2 px-4 py-2 car-btn" to="loan-form" role="button" style={{ backgroundColor: '#FF7729', color: 'white' }} type="button" >Start Your Application</Link>
 
           </div>
         </div>

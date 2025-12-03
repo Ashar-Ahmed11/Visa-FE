@@ -108,11 +108,10 @@ const VisaAboutUs = () => {
           </div>
           <div className="col-lg-6">
             <p className="text-muted mb-2">About Us</p>
-            <h2 className="fw-bold mb-3">Your Stress-Free Path To Visa Success</h2>
+            <h2 className="fw-bold mb-3">Your Gateway to Global Opportunities</h2>
             <p className="text-muted mb-3">
-              At Canada Job Guide, we focus on accuracy and professionalism in every consultation. 
-              Our team reviews your documents for completeness and provides guidance based on 
-              publicly available Canadian immigration standards.
+              At Travels Embassy, we believe that the right guidance can turn your dreams of working abroad into reality. From Canada online jobs apply to Dubai jobs online apply and Bahrain jobs for Pakistani, our mission is to make your visa and job application process seamless, clear, and stress-free.
+              We understand the challenges of applying for online jobs in Saudi Arabia or Bahrain police jobs for Pakistani, and our experienced consultants are here to guide you at every step. We review your documents, provide personalized advice, and ensure your applications are organized and complete. Our goal is to empower you to confidently apply for your dream opportunities abroad.
             </p>
             <p className="text-muted mb-4">
               We help you understand the visa application process and its criteria; we support you in 
@@ -160,11 +159,11 @@ const VisaAboutUs = () => {
             <div className="col-lg-4">
               <div className="card h-100 p-4">
                 <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
-                  <i className="bi bi-bullseye"></i>
+                  <img src="https://canadajobguide.com/wp-content/uploads/2025/08/Glyph_-undefined.png" alt="" />
                 </div>
                 <h5 className="fw-bold mb-3">Our Mission</h5>
                 <p className="text-muted small">
-                  Make the best visa choices your Canadian immigration journey with clarity. Your success starts with informed decisions, and we're here to help you achieve it. We're here to offer clear information and guidance to help you better understand the visa process. We aim to be a trusted, professional resource in Canadian immigration consultancy. Disclaimer: Canada Job Guide is a private consultancy. We are not affiliated with the Government of Canada and do not guarantee visa approval.
+                  To make global career opportunities accessible, Travels Embassy provides accurate, professional, and personalized consultancy for individuals aiming for online job apply, driver jobs in Dubai, teaching jobs in Bahrain, and more. We guide you through the entire process so you can focus on your goals with clarity and confidence.
                 </p>
               </div>
             </div>
@@ -173,11 +172,11 @@ const VisaAboutUs = () => {
             <div className="col-lg-4">
               <div className="card h-100 p-4" style={{backgroundColor: '#ff6b35', color: 'white'}}>
                 <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: 'rgba(255,255,255,0.2)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  <i className="bi bi-eye"></i>
+                  <img src="https://canadajobguide.com/wp-content/uploads/2025/08/eye.png" alt="" />
                 </div>
                 <h5 className="fw-bold mb-3">Our Vision</h5>
                 <p className="small">
-                  To lead the Job Guides, our vision is to be a reliable source for consultancy in Canadian immigration and to provide accessible, clear, and professional guidance. We aim to simplify the immigration and assist process by providing key information and document support. We want to be recognized for providing consultations based on publicly available guidelines. We are a private consultancy and encourage clients to visit official government websites such as IRCC for policy details and to verify any information we provide. We are not affiliated with the Government of Canada and do not guarantee visa approval.
+                  Travels Embassy strives to be the most trusted source for Canada online jobs apply, Dubai company jobs online apply, and other international employment opportunities. We aim to simplify the complex visa and job application process, offering clear guidance, document support, and practical tips to help you succeed.
                 </p>
               </div>
             </div>
@@ -186,11 +185,11 @@ const VisaAboutUs = () => {
             <div className="col-lg-4">
               <div className="card h-100 p-4">
                 <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
-                  <i className="bi bi-trophy"></i>
+                  <img src="https://canadajobguide.com/wp-content/uploads/2025/08/1.png" alt="" />
                 </div>
                 <h5 className="fw-bold mb-3">Our Achievements</h5>
                 <p className="text-muted small">
-                  Over the years, Canada Job Guide has built a reputation for accuracy, professional, and client-friendly consultancy. We take pride in helping hundreds of individuals and applicants. Known for transparency and professionalism, we provide guidance, document reviews, and support that helps applicants understand the visa application process. Our achievements include building trust, staying relevant with clarity and confidence. Disclaimer: Canada Job Guide is a private consultancy. We are not affiliated with the Government of Canada and do not guarantee visa approval.
+                  We have helped hundreds of applicants pursue Bahrain airport jobs, Dubai jobs for Pakistani online apply, bahrain hotel job vacancy, and other exciting opportunities worldwide. Known for our client-friendly approach and reliable guidance, Travels Embassy has built a reputation for trust, accuracy, and professionalism.
                 </p>
               </div>
             </div>
@@ -202,9 +201,9 @@ const VisaAboutUs = () => {
       <div className="container py-5">
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
-            <h2 className="fw-bold mb-3 ">Experience Hassle-Free Visa Applications</h2>
+            <h2 className="fw-bold mb-3 ">Experience a Hassle-Free Application</h2>
             <p className=" mb-4">
-              At Canada Job Guide, we provide consultancy services that guide you through every step of your visa application. From initial documentation to submission, we ensure you have the tools to apply correctly and confidently. We are a private consultancy, and we encourage our clients to verify all information with official government sources. Disclaimer: Canada Job Guide is a private consultancy. We are not affiliated with the Government of Canada and do not guarantee visa approval.
+              With Travels Embassy, applying for international jobs and visas is simple. Our consultants guide you from initial documentation to submission and ensure you are fully prepared for online apply for jobs in Saudi Arabia, jobs in Bahrain, and US embassy Bahrain jobs. Join the thousands who have successfully applied with our support and step confidently toward your global career.
             </p>
             <button className="btn btn-warning text-white px-4">Contact Now</button>
           </div>

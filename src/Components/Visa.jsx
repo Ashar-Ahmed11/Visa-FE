@@ -109,7 +109,7 @@ const Visa = () => {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100  p-4" >
               <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
-                <i className="bi bi-gear" style={{fontSize: '24px'}}></i>
+                <img src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-35.png" alt="" />
               </div>
               <h5 className="fw-bold mb-3">Visa Consultation</h5>
               <p className="small">
@@ -122,7 +122,7 @@ const Visa = () => {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 border-1 p-4">
               <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
-                <i className="bi bi-file-earmark-text" style={{fontSize: '24px'}}></i>
+                <img src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-36-1.png" alt="" />
               </div>
               <h5 className="fw-bold mb-3">Online Application</h5>
               <p className="text-muted small">
@@ -135,7 +135,7 @@ const Visa = () => {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 border-1 p-4">
               <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
-                <i className="bi bi-headset" style={{fontSize: '24px'}}></i>
+                <img src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-35-1.png" alt="" />
               </div>
               <h5 className="fw-bold mb-3">Customer Support</h5>
               <p className="text-muted small">
@@ -148,7 +148,7 @@ const Visa = () => {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 border-1 p-4">
               <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
-                <i className="bi bi-briefcase" style={{fontSize: '24px'}}></i>
+                <img src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-35-2.png" alt="" />
               </div>
               <h5 className="fw-bold mb-3">Work Visa</h5>
               <p className="text-muted small">

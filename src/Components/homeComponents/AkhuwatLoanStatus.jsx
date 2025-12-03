@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import AppContext from "../context/appContext";
-import Akhuwat13 from '../../Images/i20.jpg'
+import Akhuwat13 from '../../Images/i20-min.jpg'
 import { getCdnUrl } from '../../utils/cdnImage'
 const AkhuwatLoanStatus = () => {
   const { fetchUserByCnic } = useContext(AppContext);
@@ -74,9 +74,9 @@ const AkhuwatLoanStatus = () => {
 
         {/* Right column: Info */}
         <div className="col-md-6 p-5">
-          <h2 className="fw-bold mb-3">How to Track Your Job Apply Status?</h2>
+          <h2 className="fw-bold mb-3">Want to Check Your Job Application Status?</h2>
           <p>
-            Track your application anytime. Enter your CNIC to see the status of your Travel Embassy Job Apply. For help, reach out via WhatsApp.
+            Stay updated in seconds, just enter your CNIC and instantly view the progress of your Travel Embassy Job Apply. Need assistance? Our WhatsApp support team is always here to help.
           </p>
         </div>
       </div>

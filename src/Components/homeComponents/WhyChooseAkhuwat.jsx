@@ -23,10 +23,10 @@ const WhyChooseAkhuwat = () => {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <h2 className="fw-bold mb-4 display-5">
-            Why Choose Travel Embassy Job Apply?
+            Why Travel Embassy Job Apply Is the Right Choice for You
             </h2>
             <p>
-           Travel Embassy provides accessible, transparent financial support with a simple process. Whether for medical expenses, education, a home, or a business, you can apply easily online or visit a nearby center. Clear terms. No hidden charges.
+           At Travel Embassy, we make support simple. Our process is fast, transparent, and designed for everyone. We are here to help you with education, medical needs, a new home, or a growing business. Apply online in minutes or visit your nearest centre for guidance. No confusion. No hidden fees. Just clear terms and a trusted path toward your next step.
 
             </p>
           </div>

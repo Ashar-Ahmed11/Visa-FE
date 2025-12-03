@@ -8,13 +8,13 @@ const AkhuwatLoanScheme = ()=>{
       <div className="container ">
         <div className="row align-items-center">
           <div className="col-lg-5 " >
-            <h1 className="fw-bold mb-4">Support Lives with Travel Embassy Job Apply</h1>
+            <h1 className="fw-bold mb-4">Find Your Dream Job Abroad – Apply Online Today</h1>
             
             <p className="mb-4 fw-bold mt-1">
-            Travel Embassy Job Apply is designed to be simple and fair. The easy application and minimal paperwork help you get support quickly with clear, reliable steps.
+            Looking for exciting opportunities in Canada, Saudi Arabia, Dubai, or Bahrain? Whether it’s teaching jobs, security positions, driver roles, or hotel vacancies, we make online job apply simple and fast. Explore Canada online jobs apply, Saudi jobs online apply, Dubai jobs online apply, or Bahrain jobs for Pakistani applicants—all in one place.
             </p>
             <p className="mb-4 fw-bold mt-1">
-            With Travel Embassy, every application is a step toward opportunity. We help you pursue education, business, housing, and career goals with friendly guidance at every step.
+            With our platform, you can easily apply for jobs in Canada, Dubai company jobs online apply, bahrain police jobs, or bahrain hotel job vacancies without stress. Track your application, get clear guidance, and take the first step toward a rewarding career abroad.
             </p>
             
             <div className="border-start border-primary border-4 ps-3 mb-4 mt-1">

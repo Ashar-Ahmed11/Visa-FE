@@ -19,15 +19,12 @@
             }}
           >
             <div className="container">
-              <h1 className="display-4 fw-bold mb-4">Contact Us</h1>
-              <h5 className="mb-3">Need Help with Canada Job Visas?</h5>
-              <p className="mb-2">Have questions about Canadian job visas or related immigration options?</p>
-              <p className="mb-2">At Canada Job Guide, we provide consultancy services,</p>
-              <p className="mb-2">offering clear information and step-by-step support based on publicly available guidelines.</p>
-              <p className="mb-4">Our team is here to assist you with personalized advice and guidance.</p>
+              <h1 className="display-4 fw-bold mb-4">Contact Travel Embassy – Your Gateway to Jobs Abroad</h1>
+              <h5 className="mb-3">Need help with Canada online jobs apply, Dubai jobs for Pakistani online apply, or jobs in Bahrain? Have questions about online apply for jobs in Saudi Arabia, Bahrain police jobs for Pakistani, or driver jobs in Dubai?</h5>
+              <p className="mb-2">At Travel Embassy, we provide professional consultancy services to guide you through every step of your online job apply process. From Dubai company jobs online apply to Bahrain hotel job vacancy, our team offers clear instructions, expert advice, and personalized support to make your application smooth and stress-free.</p>
+              <p className="mb-2">We’re here to answer your questions, review your documents, and ensure you submit your applications with confidence</p>
               <p className="small fst-italic">
-                Disclaimer: Canada Job Guide is a private consultancy. We are not affiliated with<br/>
-                the Government of Canada and do not guarantee visa approval.
+                Disclaimer: Travel Embassy is a private consultancy. We are not affiliated with <br></br> any government agencies and cannot guarantee job placement or visa approval
               </p>
             </div>
           </div>
@@ -46,7 +43,7 @@
             }}
           >
             <div className="container">
-              <h1 className="display-4 fw-bold mb-4">Get Started Today</h1>
+              <h1 className="display-4 fw-bold mb-4">Initiate Your Global Career Here- Start Visa Application Today</h1>
               <h5 className="mb-3">Professional Visa Consultancy Services</h5>
               <p className="mb-2">Expert guidance for your Canadian immigration journey</p>
               <p className="mb-2">Personalized support tailored to your needs</p>

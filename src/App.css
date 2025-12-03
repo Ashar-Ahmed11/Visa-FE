@@ -62,6 +62,61 @@ body{
   z-index: 99999999;
   border-radius: 100%;
 }
+.car-btn {
+   bottom: -4px;
+  left: 9px;
+  /* font-size: 50px; */
+  z-index: 99999999;
+  /* border-radius: 100%; */
+  color: white; 
+  animation: carBtn 1.5s infinite ease-in-out;
+}
+
+
+.heading {
+  /* position: fixed; */
+  bottom: -4px;
+  left: 9px;
+  font-size: 50px;
+  z-index: 99999999;
+  border-radius: 100%;
+  color: white; 
+  animation: pulseColor 1.5s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes pulseColor {
+  0% {
+    transform: scale(1);
+    color: white;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #FF7729;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}
+
+
+@keyframes carBtn {
+  0% {
+    transform: scale(1);
+    color: white;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}
+
+
 
 .mainCarousal{
   background: #ffffff;

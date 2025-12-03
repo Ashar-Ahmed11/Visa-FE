@@ -6,6 +6,9 @@ import img3 from '../../Images/i10.jpg'
 import img4 from '../../Images/i11.jpg'
 import img5 from '../../Images/i12.jpg'
 import img6 from '../../Images/i13.jpg'
+import img7 from '../../Images/carpenter.avif'
+import img8 from '../../Images/painter.avif'
+import img9 from '../../Images/mechanics.avif'
 import { getCdnUrl } from '../../utils/cdnImage'
 
 const JobCategories = () => {
@@ -140,6 +143,62 @@ const JobCategories = () => {
               <h5 className="card-title fw-bold mb-3">Warehouse Worker</h5>
               <p className="text-muted mb-1">Salary</p>
               <h3 className="fw-bold mb-1">3100</h3>
+              <p className="text-muted small">Canadian Dollar-commission 310</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div  data-aos="fade-left"
+            data-aos-duration="500" className="col-md-6 col-lg-4">
+          <div className="card h-100 shadow-lg border-0">
+            <img 
+              src={getCdnUrl(img7)}
+              className="card-img-top" 
+              alt="Warehouse Worker"
+              style={{height: '200px', objectFit: 'cover'}}
+            />
+            <div className="card-body text-center">
+              <h5 className="card-title fw-bold mb-3"> Carpenter</h5>
+              <p className="text-muted mb-1">Salary</p>
+              <h3 className="fw-bold mb-1">3100</h3>
+              <p className="text-muted small">Canadian Dollar-commission 310</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div  data-aos="fade-left"
+            data-aos-duration="500" className="col-md-6 col-lg-4">
+          <div className="card h-100 shadow-lg border-0">
+            <img 
+              src={getCdnUrl(img8)}
+              className="card-img-top" 
+              alt="Warehouse Worker"
+              style={{height: '200px', objectFit: 'cover'}}
+            />
+            <div className="card-body text-center">
+              <h5 className="card-title fw-bold mb-3">Painter</h5>
+              <p className="text-muted mb-1">Salary</p>
+              <h3 className="fw-bold mb-1">3300</h3>
+              <p className="text-muted small">Canadian Dollar-commission 310</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div  data-aos="fade-left"
+            data-aos-duration="500" className="col-md-6 col-lg-4">
+          <div className="card h-100 shadow-lg border-0">
+            <img 
+              src={getCdnUrl(img9)}
+              className="card-img-top" 
+              alt="Warehouse Worker"
+              style={{height: '200px', objectFit: 'cover'}}
+            />
+            <div className="card-body text-center">
+              <h5 className="card-title fw-bold mb-3">Mechanic</h5>
+              <p className="text-muted mb-1">Salary</p>
+              <h3 className="fw-bold mb-1">3400</h3>
               <p className="text-muted small">Canadian Dollar-commission 310</p>
               <button className="btn px-4 mt-3" style={{backgroundColor:'#FF7729'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
             </div>

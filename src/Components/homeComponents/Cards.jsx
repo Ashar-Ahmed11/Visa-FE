@@ -10,14 +10,14 @@ const Cards = () => {
       <p className='w-70% text-center' style={{paddingTop:'26px'}}>Travel Embassy Job Apply</p>
       
       <h1 ><b>What We Offer</b></h1>
-        <h1><b>Your First Step To A Brighter Future</b></h1>
+        <h1><b>Start Your Journey Toward a Better Tomorrow</b></h1>
         <div className="row mt-5 d-flex justify-content-center flex-wrap">
           {[
-            { icon: 'fa-money', title: 'Job Apply for Individuals', desc: 'Clear eligibility and easy tracking. Stay updated at every step.' },
-            { icon: 'fa-suitcase', title: 'Business Job Apply', desc: 'Simple process, quick decisions, minimal documentation.' },
-            { icon: 'fa-eye', title: 'Home Job Apply', desc: 'Support for your home-related needs with a fast process.' },
-            { icon: 'fa-heart', title: 'Wedding Job Apply', desc: 'Manage big-day needs with flexible, fast approvals.' },
-            { icon: 'fa-refresh', title: 'Car Job Apply', desc: 'Flexible options and quick approvals, hassle-free.' },
+            { icon: 'fa-money', title: 'Apply for Jobs as an Individual', desc: 'Clear requirements and simple updates, know exactly where your application stands at every stage.' },
+            { icon: 'fa-suitcase', title: 'Business Job Applications', desc: 'A smooth, straightforward process with fast decisions and minimal paperwork.' },
+            { icon: 'fa-eye', title: 'Home-Based Job Applications', desc: 'Get the support you need for home-related roles with a quick and easy application flow.' },
+            { icon: 'fa-heart', title: 'Wedding Event Job Applications', desc: 'Find work for special events with flexible options and speedy approvals.' },
+            { icon: 'fa-refresh', title: 'Car & Transport Job Applications', desc: 'Fast approvals and flexible opportunities for drivers and transport-related roles — without the hassle.' },
           ].map((card, i) => (
             <div className={`col-md-4 col-12 mt-4 ${i >= 3 ? 'mb-4' : ''}`} key={card.title}>
               <div

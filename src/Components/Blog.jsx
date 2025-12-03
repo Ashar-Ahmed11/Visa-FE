@@ -2,6 +2,8 @@ import React from 'react'
 import b1 from '../Images/b1.jpg'
 import b2 from '../Images/b2.jpg'
 import b3 from '../Images/b3.jpg'
+import b4 from '../Images/blog4.jpg'
+import b5 from '../Images/blog5.jpg'
 import Blogimg from '../Images/blog.jpg'
 
 
@@ -24,8 +26,9 @@ const Blog = () => {
             }}
           >
             <div className="container">
-              <h1 className="display-4 fw-bold mb-4">Blog and Articles</h1>
-              <p className="mb-2">“Our blog provides the latest updates, tips, and insights on visa applications, immigration policies, study abroad programs, work permits, and international travel. Whether you’re planning to study, work, or settle abroad, we offer reliable information and practical guidance to help you make informed decisions.”
+              <h1 className="display-4 fw-bold mb-4">Travel Embassy Blog and Insights</h1>
+              <h5>Stay Updated on Visa Applications, Jobs Abroad, and International Opportunities</h5>
+              <p className="mb-2">“At Travels Embassy, our blog brings you the latest updates, tips, and practical guidance on online job apply, Canada online jobs apply, Dubai jobs online apply, Saudi jobs online apply, and other international work opportunities. We cover immigration policies, work permits, study abroad programs, and career options, giving you reliable information to make confident decisions about your global career journey.”
 
  
 
@@ -106,11 +109,11 @@ const Blog = () => {
     </div>
     <div className="container py-5">
       <div className="text-center mb-5">
-        <h2 className="fw-bold">Discover Our Latest News</h2>
-        <h2 className="fw-bold">And Expert Blogs</h2>
+        <h2 className="fw-bold">Explore Our Latest Articles</h2>
+        <h2 className="fw-bold"> and Expert Advice</h2>
       </div>
 
-      <div className="row g-4">
+      <div className="row g-4 justify-content-center">
         {/* Blog 1 - Lee Cadesky */}
         <div className="col-lg-4">
           <div className="card h-100 border-0 shadow-sm">
@@ -122,10 +125,10 @@ const Blog = () => {
             />
             <div className="card-body text-center">
               <h5 className="fw-bold mb-3" style={{color: '#ff6b35'}}>
-                Lee Cadesky: Innovating Food With Purpose
+                How to Apply for a Canadian Job Visa – Step by Step
               </h5>
               <p className="text-muted small">
-                Lee Cadesky, Director of Meal Solutions at Maple Leaf Foods, has built a uniquely creative career path—from aerospace engineering to a master's in dairy science, and later pioneering insect-based protein innovation—before joining Maple Leaf Foods in 2020. Today, Lee leads innovation across well-known brands like B. Holiday® Luncheon Meat and Tenderflake® Lard while advancing plant-based alternatives solutions. Under her leadership, products like Schneider's egg bites and sandwiches have quickly gained traction, capturing 20% of the savory frozen breakfast market since their 2024 launch.
+                Applying for a Canada job visa can seem overwhelming, but Travels Embassy makes the process simple. Learn how to prepare essential documents such as your passport, job offer letter, proof of work experience, and educational certificates. Understand employer requirements and LMIA rules so you can apply for jobs in Canada with confidence. Our consultancy helps you stay organized, informed, and ready to secure your dream opportunity.
               </p>
             </div>
           </div>
@@ -142,10 +145,10 @@ const Blog = () => {
             />
             <div className="card-body text-center">
               <h5 className="fw-bold mb-3" style={{color: '#ff6b35'}}>
-                Visible Support: Pride, Belonging & Consistent Allyship
+                Dubai Jobs for Pakistani Online Apply – Tips to Get Started
               </h5>
               <p className="text-muted small">
-                In today's environment, where 2SLGBTQIA+ rights continue to face challenges in parts of Canada and the U.S., active and consistent support is more important than ever. "Pride is a time to celebrate the contributions and resilience of the 2SLGBTQIA+ community. It's a moment to uplift diverse voices and proudly affirm that everyone deserves the right to live openly, authentically, and safely."
+                Looking to work in Dubai? From driver jobs in Dubai to Dubai company jobs online apply, we guide you on how to find reliable openings and submit applications that stand out. Get practical tips on documentation, eligibility, and interview preparation to increase your chances of landing the right role in the UAE.
               </p>
             </div>
           </div>
@@ -162,14 +165,53 @@ const Blog = () => {
             />
             <div className="card-body text-center">
               <h5 className="fw-bold mb-3" style={{color: '#ff6b35'}}>
-                How To Apply For A Canadian Job Visa – Quick Guide
+                Jobs in Saudi Arabia Online Apply – Your Complete Guide
               </h5>
               <p className="text-muted small">
-                Applying for a Canadian job visa can feel complex, but with the right guidance it becomes more manageable. At Canada Job Guide, we help you understand the process step by step. This includes choosing the appropriate work permit type, understanding employer requirements such as LMIA, and preparing essential documents like your passport, job offer letter, proof of work experience, and educational credentials. Our consultancy ensures you stay organized and well-prepared throughout your application journey.
+                Saudi Arabia offers exciting career options for skilled and unskilled workers. Our blogs explain how to online apply for jobs in Saudi Arabia, from hotel positions to administrative roles. Learn how to submit a complete application, meet visa requirements, and understand cultural expectations so your work experience abroad is smooth and rewarding.
               </p>
             </div>
           </div>
         </div>
+        {/* Blog 4 - How To Apply */}
+        <div className="col-lg-4">
+          <div className="card h-100 border-0 shadow-sm">
+            <img 
+              src={b4}
+              className="card-img-top" 
+              alt="Passports and Flags"
+              style={{height: '200px', objectFit: 'cover'}}
+            />
+            <div className="card-body text-center">
+              <h5 className="fw-bold mb-3" style={{color: '#ff6b35'}}>
+                Bahrain Job Online Apply – Opportunities for Pakistani Workers
+              </h5>
+              <p className="text-muted small">
+                Discover tips for applying to Bahrain jobs for Pakistani, including Bahrain police jobs, security guard jobs in Bahrain, teaching jobs in Bahrain, and Bahrain hotel job vacancy. Travels Embassy shares insights on eligibility, documentation, and recruitment trends to help you confidently pursue employment opportunities in Bahrain.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Blog 5 - How To Apply */}
+        <div className="col-lg-4">
+          <div className="card h-100 border-0 shadow-sm">
+            <img 
+              src={b5}
+              className="card-img-top" 
+              alt="Passports and Flags"
+              style={{height: '200px', objectFit: 'cover'}}
+            />
+            <div className="card-body text-center">
+              <h5 className="fw-bold mb-3" style={{color: '#ff6b35'}}>
+                Expert Advice and News for Your Career Abroad
+              </h5>
+              <p className="text-muted small">
+                Our blog also provides updates on international travel, immigration policies, and career pathways, helping you make informed decisions for apply for jobs in Canada, Dubai jobs online apply, and US embassy Bahrain jobs. From work permits to visas, our guides are designed to simplify the application process and help you reach your global career goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      
       </div>
     </div>
   <div className="py-5" style={{backgroundColor: '#ff7f50'}}>
