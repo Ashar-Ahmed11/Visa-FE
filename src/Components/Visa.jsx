@@ -20,9 +20,9 @@ const Visa = () => {
             }}
           >
             <div className="container">
-              <h1 className="display-4 fw-bold mb-4">Visa</h1>
-         <p className="mb-2">Rely on Travels Embassy for professional documentation review and step-by-step visa consultancy. We focus on transparency, professionalism, and personalized guidance—supporting you with clear information and assistance at every stage of your job visa process.</p>
-         <p className="mb-2">Disclaimer: Travels Embassy is a private consultancy. We are not affiliated with the Government of Canada and do not guarantee visa approval
+              <h1 className="display-4 fw-bold mb-4">Visa Services</h1>
+         <p className="mb-2">Your Trusted Partner for Global Career Opportunities</p>
+         <p className="mb-2">At Travels Embassy, we make Canada online jobs apply, Dubai jobs online apply, and other international visa processes simple and stress-free. Our professional team reviews your documents, offers personalized guidance, and ensures that every step of your visa application is accurate and transparent. We focus on providing clarity and confidence so you can pursue global career opportunities without confusion.
 
 </p>
               {/* <h5 className="mb-3">Need Help with Canada Job Visas?</h5>
@@ -100,8 +100,8 @@ const Visa = () => {
     </div>
     <div className="container py-5">
         <div className="text-center mb-5">
-          <h2 className="fw-bold mb-3">Your One-Stop Solution For All Visa Needs</h2>
-          <p className="text-muted">Expert guidance on visa requirements and eligibility criteria.</p>
+          <h2 className="fw-bold mb-3">Comprehensive Visa Solutions</h2>
+          <p className="text-muted">We provide end-to-end support for all types of visa applications, from Bahrain jobs online apply to Saudi jobs online apply and US embassy Bahrain jobs. Our services include expert consultation, step-by-step document review, and guidance tailored to your career goals.</p>
         </div>
 
         <div className="row g-4 justify-content-center">
@@ -113,7 +113,7 @@ const Visa = () => {
               </div>
               <h5 className="fw-bold mb-3">Visa Consultation</h5>
               <p className="small">
-                Get personalized consultancy from Travels Embassy to explore the right visa pathway and better understand immigration policies and requirements before applying.
+                Get personalized advice to explore the right visa pathway for your career abroad. Travels Embassy helps you understand immigration policies and eligibility criteria for apply for jobs in Canada, Dubai company jobs online apply, driver jobs in Dubai, and other opportunities.
               </p>
             </div>
           </div>
@@ -124,9 +124,9 @@ const Visa = () => {
               <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
                 <img src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-36-1.png" alt="" />
               </div>
-              <h5 className="fw-bold mb-3">Online Application</h5>
+              <h5 className="fw-bold mb-3">Online Application Assistance</h5>
               <p className="text-muted small">
-                Get step-by-step consultancy from Travels Embassy to help you prepare your visa application with clarity and confidence based on publicly available guidelines.
+                We guide you through every step of the visa application process with clear instructions and support. Our team ensures your documents are complete, applications are error-free, and you are fully prepared to apply for Bahrain police jobs for Pakistani, bahrain hotel job vacancy, and teaching jobs in Bahrain.
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ const Visa = () => {
               </div>
               <h5 className="fw-bold mb-3">Customer Support</h5>
               <p className="text-muted small">
-                Receive friendly and informative support from Travels Embassy, with our team offering guidance and consultancy at every stage of the visa process.
+                Our dedicated team is always ready to help with guidance and consultancy. From reviewing documents to answering queries, we make sure your visa application journey is smooth and stress-free.
               </p>
             </div>
           </div>
@@ -150,9 +150,9 @@ const Visa = () => {
               <div className="mb-3" style={{width: '50px', height: '50px', backgroundColor: '#333', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white'}}>
                 <img src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-35-2.png" alt="" />
               </div>
-              <h5 className="fw-bold mb-3">Work Visa</h5>
+              <h5 className="fw-bold mb-3">Work Visa Guidance</h5>
               <p className="text-muted small">
-                Want to build your career abroad? Our work visa can create opportunities to explore international careers. At Travels Embassy, we provide professional consultancy for skilled and unskilled workers, helping you understand work applications for Canada, Saudi Arabia, Malaysia, Oman, UAE, and other popular destinations, based on publicly available requirements.
+                Looking to build your career abroad? Travels Embassy offers professional consultancy for work visa applications to top destinations like Canada, Saudi Arabia, UAE, Oman, Malaysia, and more. We help skilled and unskilled workers understand the requirements for international employment and guide them through the entire process. Opportunities include car driver jobs in Dubai, Dubai jobs for Pakistani online apply, and job in Bahrain hotel.
               </p>
             </div>
           </div>
@@ -174,9 +174,9 @@ const Visa = () => {
             >
               <div className="row">
                 <div className="col-lg-6">
-                  <h2 className="fw-bold mb-4">Experience Hassle-Free Visa Applications</h2>
+                  <h2 className="fw-bold mb-4">Hassle-Free Visa Applications</h2>
                   <p className="mb-0">
-                    At Travels Embassy, we simplify the visa process, so you can focus on your future. Our experienced team provides clear step-by-step guidance and professional document support, helping you navigate each stage of your application with compliance and ease. From consultation to submission, we ensure a process that is accurate, transparent, and tailored to your needs. We are a private consultancy and encourage clients to verify information with official sources.
+                    At Travels Embassy, we simplify complex visa processes, letting you focus on your career goals. Our team provides professional guidance, document review, and step-by-step consultancy, ensuring your application is accurate, transparent, and tailored to your needs. From online job apply to bahrain airport jobs, we support you at every stage. We encourage clients to verify all information with official sources to make informed decisions.
                   </p>
                 </div>
               </div>
