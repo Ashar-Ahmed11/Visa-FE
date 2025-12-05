@@ -60,7 +60,7 @@ const color = "#FF7729"
             Travel Embassy Job Apply — Fast approvals, clear terms, trusted support. Contact: {siteData&&siteData.phone}
           </p>
           <p className="p-2 m-0 text-white">
-            Travel Embassy Job Apply — Fast approvals, clear terms, trusted support. Contact: {siteData&&siteData.phone}
+            Travel Embassy Job Apply — Fast approvals, clear terms, trusted support. Contact: {siteData&&siteData.description}
           </p>
         </div>
       </div>
